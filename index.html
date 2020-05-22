@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="John Kyker">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Exchange Rate</title>
+</head>
+<body>
+<main>
+<h1>Exchange Rate</h1>
+<div class="row">
+<div class="col-sm-8">
+Input Currency: <input type="text" value="USD" name="base" id="base"><br>
+Amount: <input type="number" name="principal" id="principal"><br>
+Output Currency: <input type="text" name="output" id="output"><br>
+<button type="button" onclick="convertCurrency();">Exchange</button><br><br>
+<p>Base Currency to Exchange: <span id="base_currency"></span></p>
+<p>Amount of Currency: <span id="input_amount"></span></p>
+<p>Exchange Rate (1:X): <span id="exchange_rate"></span></p>
+<p>Currency Exchanged Into: <span id="output_currency"></span></p>
+<p>Amount of Currency: <span id="output_amount"></span></p>
+<p>Date of Rate Evaluation: <span id="date"></span> *Note API is based in Europe.</p>
+</div>
+<div class="col-sm-4">
+<p id="cur_table">
+    <h2>Common Currencies</h2>
+    <table>
+        <tr>
+            <th>Currency Name</th>
+            <th>Currency Code</th> 
+        </tr>
+        <tr>
+            <th>Canadian dollar</th>
+            <th>CAD</th> 
+        </tr>
+        <tr>
+            <th>Hong Kong dollar</th>
+            <th>HKD</th> 
+        </tr>
+        <tr>
+            <th>Australian dollar</th>
+            <th>AUD</th> 
+        </tr>
+        <tr>
+            <th>Indian rupee</th>
+            <th>INR</th> 
+        </tr>
+        <tr>
+            <th>Brazilian real</th>
+            <th>BRL</th> 
+        </tr>
+        <tr>
+            <th>Russian ruble</th>
+            <th>RUB</th> 
+        </tr>
+        <tr>
+            <th>Japanese yen</th>
+            <th>JPY</th> 
+        </tr>
+        <tr>
+            <th>US dollar</th>
+            <th>USD</th> 
+        </tr>
+        <tr>
+            <th>British pound</th>
+            <th>GBP</th> 
+        </tr>
+        <tr>
+            <th>EU euro</th>
+            <th>EUR</th> 
+        </tr>
+        <tr>
+            <th>Mexican peso</th>
+            <th>MXN</th> 
+        </tr>
+    </table>
+</p>
+</div>
+</main>
+<footer>
+    Created by John Kyker on March 21, 2020.
+</footer>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/80c1c40743.js" crossorigin="anonymous"></script>
+</html>
