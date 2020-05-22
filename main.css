@@ -1,0 +1,19 @@
+:root{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #afd2e9;
+}
+.table{
+    text-align: center;
+}
+.row {
+    display: flex;
+  }
+  
+.column_1 {
+    flex: 60%;
+    align-content: center;
+}
+.footer{
+    align-content: center;
+    font-size: 0.5em;
+}
